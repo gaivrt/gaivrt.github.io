@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
+<meta charset="UTF-8">
 <title>视频播放</title>
+<style>
+  /* 确保视频在不同设备上正常显示 */
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
 </head>
 <body>
-  <video width="100%" height="auto" controls autoplay>
+  <video controls autoplay preload="metadata" poster="your-poster.jpg">
     <source src="https://raw.githubusercontent.com/GEORGE-Ta/G_image_host/main/871856127_nb3-1-16.mp4" type="video/mp4">
+    <source src="your-video.webm" type="video/webm"> <!-- 备用视频源 -->
     你的浏览器不支持 video 标签。
   </video>
+  <script>
+    // 添加自定义控件逻辑或其他交互脚本
+  </script>
 </body>
 </html>
