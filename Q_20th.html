@@ -4,10 +4,20 @@
 <meta charset="UTF-8">
 <title>视频播放</title>
 <style>
-  /* 确保视频在不同设备上正常显示 */
+  /* 设置背景颜色和确保页面填满整个视口 */
+  body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 设置视频播放器的最大宽度和自适应高度 */
   video {
-    width: 100%;
-    height: auto;
+    width: 95%; /* 留出一点边距 */
+    max-width: 640px; /* 最大宽度，可以根据需要调整 */
   }
 </style>
 </head>
@@ -17,8 +27,5 @@
     <source src="your-video.webm" type="video/webm"> <!-- 备用视频源 -->
     你的浏览器不支持 video 标签。
   </video>
-  <script>
-    // 添加自定义控件逻辑或其他交互脚本
-  </script>
 </body>
 </html>
